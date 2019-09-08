@@ -10,6 +10,10 @@
     </parent>
     <modules>
         <module>house-web</module>
+        <module>house-dao</module>
+        <module>house-domain</module>
+        <module>house-service</module>
+        <module>house-utils</module>
     </modules>
 
     <groupId>cn.ww.house</groupId>
