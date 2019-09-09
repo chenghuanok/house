@@ -11,6 +11,7 @@
     <groupId>cn.ww.house</groupId>
     <artifactId>house-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>house-web</name>
     <description>House-web project for Spring Boot</description>
 
@@ -19,6 +20,13 @@
     </properties>
 
     <dependencies>
+        <!-- house-service -->
+        <dependency>
+            <groupId>cn.ww.house</groupId>
+            <artifactId>house-service</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -29,6 +37,14 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- mysql数据配置 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+
     </dependencies>
 
 </project>

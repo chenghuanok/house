@@ -11,5 +11,16 @@
 
     <artifactId>house-dao</artifactId>
 
+    <dependencies>
+
+        <!-- house-domain  -->
+        <dependency>
+            <groupId>cn.ww.house</groupId>
+            <artifactId>house-domain</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
 
 </project>

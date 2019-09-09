@@ -10,6 +10,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>house-service</artifactId>
-
+    <dependencies>
+        <!-- house-dao  -->
+        <dependency>
+            <groupId>cn.ww.house</groupId>
+            <artifactId>house-dao</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
