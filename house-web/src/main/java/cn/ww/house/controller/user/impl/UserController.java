@@ -1,5 +1,6 @@
 package cn.ww.house.controller.user.impl;
 
+import cn.ww.house.async.AsyncTask;
 import cn.ww.house.controller.user.IUserController;
 import cn.ww.house.entity.User;
 import cn.ww.house.user.IUserService;
@@ -25,6 +26,9 @@ public class UserController implements IUserController {
     */
     @Autowired
     private IUserService userService;
+
+    @Autowired
+    private AsyncTask asyncTask;
 
     /**
      *保存用户

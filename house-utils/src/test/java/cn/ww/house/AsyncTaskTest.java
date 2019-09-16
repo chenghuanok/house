@@ -10,7 +10,7 @@ import java.util.concurrent.Future;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class HouseWebApplicationTests {
+public class AsyncTaskTest {
 
     /**
      * 异步任务
@@ -18,10 +18,9 @@ public class HouseWebApplicationTests {
      * @return
      * @author chenghuan
      * @date 2019/9/16 21:28
-     */
+    */
     @Autowired
     private AsyncTask asyncTask;
-
 
     @Test
     public void asyncTest()throws Exception{
@@ -40,5 +39,4 @@ public class HouseWebApplicationTests {
         String result = "任务完成，一共用时为："+(end-start)+"毫秒";
         System.out.println(result);
     }
-
 }
