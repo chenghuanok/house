@@ -32,7 +32,7 @@ public class UserServiceImpl implements IUserService {
      * @date 2019/9/9 22:38
      */
     @Override
-    public void save(User user) {
+    public void save(final User user) {
        userDao.save(user);
     }
 }

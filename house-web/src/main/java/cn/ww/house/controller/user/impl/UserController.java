@@ -3,6 +3,7 @@ package cn.ww.house.controller.user.impl;
 import cn.ww.house.async.AsyncTask;
 import cn.ww.house.controller.user.IUserController;
 import cn.ww.house.entity.User;
+import cn.ww.house.hash.HashUtils;
 import cn.ww.house.user.IUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,12 +37,12 @@ public class UserController implements IUserController {
      *@date 2019/9/9 22:47
     */
     @Override
-    @GetMapping("/save")
-    public void save() {
+    @GetMapping("/register")
+    public void register() {
        final User user = new User();
        final Date date = new Date();
-       user.setName("chenghuan").setPhone("13871465451").setEmail("123@qq.com").setAboutMe("学习").
-               setPassWd("111").setAvatar("123").
+       user.setName("chenghuan").setPhone("18907141130").setEmail("456@qq.com").setAboutMe("学习").
+               setPassWd(HashUtils.pwdHmacMd5("111")).setAvatar("123").
                setType(1).setCreateTime(date).setUpdateTime(date).setAgencyId(12L).setEnable(1);
        userService.save(user);
     }

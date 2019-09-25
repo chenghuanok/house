@@ -8,7 +8,7 @@ package cn.ww.house.controller.user;
 public interface IUserController {
 
     /**
-     *
+     * 注册
      */
-    void save();
+    void register();
 }
