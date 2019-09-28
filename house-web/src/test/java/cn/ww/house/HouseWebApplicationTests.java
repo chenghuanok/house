@@ -1,6 +1,7 @@
 package cn.ww.house;
 
 import cn.ww.house.async.AsyncTask;
+import org.assertj.core.util.Lists;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +40,7 @@ public class HouseWebApplicationTests {
         long end = System.currentTimeMillis();
         String result = "任务完成，一共用时为："+(end-start)+"毫秒";
         System.out.println(result);
+        Lists.newArrayList();
     }
 
 }
